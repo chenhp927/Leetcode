@@ -47,6 +47,7 @@ public:
 				int nBase = nums[i-1];
 				int j=i;
 				int nSwapIndex = j;
+				//找到后面的数字中比nBase大的最小的数字
 				for (; j<nums.size(); ++j)
 				{
 					if (nums.at(j) > nBase && nums.at(j) < nums[i])
